@@ -37,15 +37,6 @@ namespace PetManager {
             return now - petyears;
         }
 
-<<<<<<< HEAD
-        public override int GetHashCode()
-        {
-            return base.GetHashCode();
-        }
-
-       
-=======
->>>>>>> b25d2232a0f57623ee7a024679b96eb75cfbb20d
         public override bool Equals(object obj)
         {
             if (!(obj is Pet))
@@ -53,11 +44,7 @@ namespace PetManager {
                 return object.Equals(obj, this);
             }
             var pet = (Pet)obj;
-<<<<<<< HEAD
-            return Birthday.Equals(pet.Birthday) && string.Equals(this.Name, pet.Name) &&
-=======
             return string.Equals(this.Name, pet.Name) && Birthday.Equals(pet.Birthday) &&
->>>>>>> b25d2232a0f57623ee7a024679b96eb75cfbb20d
                    string.Equals(this.Breed, pet.Breed);
         }
     }
