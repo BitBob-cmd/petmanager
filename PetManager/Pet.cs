@@ -36,5 +36,10 @@ namespace PetManager {
             var now = DateTime.Now.Year;
             return now - petyears;
         }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }
